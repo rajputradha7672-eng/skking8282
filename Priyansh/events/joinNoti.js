@@ -62,7 +62,7 @@ module.exports.run = async function({ api, event }) {
       }
       memLength.sort((a, b) => a - b);
 
-      (typeof threadData.customJoin == "undefined") ? msg = 'WELCOME MADARCHOD {name}' : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = '' : msg = threadData.customJoin;
       msg = msg
       .replace(/\{name}/g, nameArray.join(', '))
       .replace(/\{type}/g, (memLength.length > 1) ?  '𝗖𝗮́𝗰 𝗯𝗮̣𝗻' : '𝗕𝗮̣𝗻')
